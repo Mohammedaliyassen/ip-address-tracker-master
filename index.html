@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="leaflet/leaflet.css"  >
+  <script src="leaflet/leaflet.js" ></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap'); </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<header>
+  <div id="head">
+    <h1> IP Address Tracker </h1>
+    <div id="searchBox">
+    <input type="text" placeholder="Search for any IP address or domain" id="search" value=""> 
+    <button id="btnSearch" onclick="iamHere()"><img src="images/icon-arrow.svg" ></button>
+    </div> 
+    <button id="returnMe"><img src="images/icon-arrow.svg" ></button>
+    <ul >
+      
+      <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg" >
+        <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" 
+        fill="#000" fill-rule="evenodd"/></svg>
+    <li> IP Address  <h1 id="ipAddress"></h1></li>
+    <li> Location  <h1 id="loca"></h1></li>
+    <li> Timezone  <h1 id="timezone"></h1></li>
+    <!-- <li> UTC add offset value dynamically using the API</li> -->
+    <li>ISP <h1 id="isp"></h1></li>
+    </ul>
+  </div>
+</header>
+<div id="map">
+  
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
